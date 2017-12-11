@@ -14,12 +14,12 @@ var GUI = window.GUI || {};
 GUI.MAIN = (function(){
 	return {
 		Format: function() {
-			$('head').append(<<"EndOfStyle"
+			$('head').append(`
 				<style type="text/css">
 					.smc-doc, .title_ct_icon.doc, .smc-media-image-container.doc {
 						background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDggNDgiPjxwb2x5Z29uIGZpbGw9IiNkZGQiIHBvaW50cz0iNDAsNDUgOCw0NSA4LDMgMzAsMyA0MCwxMyIvPjxwb2x5Z29uIGZpbGw9IiNiYmIiIHBvaW50cz0iMzguNSwxNCAyOSwxNCAyOSw0LjUiLz48ZyBmaWxsPSIjODg4Ij48cmVjdCB4PSIxNiIgeT0iMjEiIHdpZHRoPSIxNyIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iMTYiIHk9IjI1IiB3aWR0aD0iMTMiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjE2IiB5PSIyOSIgd2lkdGg9IjE3IiBoZWlnaHQ9IjIiLz48cmVjdCB4PSIxNiIgeT0iMzMiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyIi8+PC9nPjwvc3ZnPg==") !important;
 					}
-				</style>EndOfStyle
+				</style>`
 			);
 		}
 	};
@@ -28,7 +28,7 @@ GUI.MAIN = (function(){
 GUI.ExplorerPaginator = (function(){
 	return {
 		Format: function() {
-			$('head').append(<<"EndOfStyle"
+			$('head').append(`
 				<style type='text/css'>
 					.paginator-folder {
 						margin-top: 4px;
@@ -58,7 +58,7 @@ GUI.ExplorerPaginator = (function(){
 						border-color: #8080ff;
 						border-style: solid;
 					}
-				</style>EndOfStyle
+				</style>`
 			);
 		}
 	};
