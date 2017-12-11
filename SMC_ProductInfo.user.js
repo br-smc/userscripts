@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        ProductInfo
 // @namespace   SMCTools
-// @version     2.01
+// @version     2.02
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     http://smc*/plugin-transformer?*&objType=product&*&trafo=HTML*&*
@@ -428,5 +428,7 @@ ProductInfo.ProductData = (function() {
 	};
 })();
 
-ProductInfo.ProductInfo.Show(ProductInfo.COLOR);
-ProductInfo.ProductData.FormatSAPData(ProductInfo.COLOR);
+$(document).ready(function() {
+	ProductInfo.ProductInfo.Show(ProductInfo.COLOR);
+	ProductInfo.ProductData.FormatSAPData(ProductInfo.COLOR);
+});
