@@ -1,10 +1,11 @@
 ﻿// ==UserScript==
 // @name        ProductInfo
 // @namespace   SMCTools
-// @version     2.03
+// @version     2.04
 // @description Displays information about products in SMC product repository
 // @grant       none
-// @include     http://smc*/plugin-transformer?*&objType=product&*&trafo=HTML*&*
+// @include     http://smc*/plugin-transformer?*&objType=product&*&trafo=HTML&*
+// @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
 // ==/UserScript==
 
@@ -427,7 +428,5 @@ ProductInfo.ProductData = (function() {
 	};
 })();
 
-$(document).ready(function() {
-	ProductInfo.ProductInfo.Show(ProductInfo.COLOR);
-	ProductInfo.ProductData.FormatSAPData(ProductInfo.COLOR);
-});
+ProductInfo.ProductInfo.Show(ProductInfo.COLOR);
+ProductInfo.ProductData.FormatSAPData(ProductInfo.COLOR);
