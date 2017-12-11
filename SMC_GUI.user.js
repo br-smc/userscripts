@@ -5,6 +5,7 @@
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     */#uri=*
+// @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
 // ==/UserScript==
 
