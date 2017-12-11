@@ -1,10 +1,11 @@
 ﻿// ==UserScript==
 // @name        ProductInfo
 // @namespace   SMCTools
-// @version     2.00
+// @version     2.01
 // @description Displays information about products in SMC product repository
 // @grant       none
-// @include     */plugin-transformer?*&objType=product&*&trafo=HTML*&*
+// @include     http://smc*/plugin-transformer?*&objType=product&*&trafo=HTML*&*
+// @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
 // ==/UserScript==
 
