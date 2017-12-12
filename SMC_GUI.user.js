@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   SMCTools
-// @version     2.12
+// @version     2.13
 // @description Displays information about products in SMC product repository
 // @grant       none
-// @include     http://smc*/#uri=*
+// @include     http://smc*
 // @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
 // ==/UserScript==
