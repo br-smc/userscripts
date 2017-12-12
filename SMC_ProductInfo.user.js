@@ -1,7 +1,7 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        ProductInfo
 // @namespace   SMCTools
-// @version     2.10
+// @version     2.12
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     http://smc*

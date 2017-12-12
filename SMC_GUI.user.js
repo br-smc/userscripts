@@ -1,7 +1,7 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        GUI
 // @namespace   SMCTools
-// @version     2.11
+// @version     2.12
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     http://smc*/#uri=*
