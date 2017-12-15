@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ProductInfo
 // @namespace   SMCTools
-// @version     2.20
+// @version     2.21
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     http://smc*
@@ -79,7 +79,7 @@ Product.COLOR = {
 };
 
 Product.Info = (function(context) {
-	function OnlineStatusOfProduct() {
+	function OnlineStatusOfProduct(context) {
 		var OnlineStatus = null;
 		$("tr:contains('online')", context).each(function(index) {
 			switch($(this).text()) {
