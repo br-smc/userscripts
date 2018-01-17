@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   SMCTools
-// @version     2.20
+// @version     2.21
 // @description Displays information about products in SMC product repository
 // @grant       none
 // @include     http://smc*
 // @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
+// @downloadURL https://github.com/br-smc/userscripts/raw/master/SMC_GUI.user.js
 // ==/UserScript==
 
 var GUI = window.GUI || {};
