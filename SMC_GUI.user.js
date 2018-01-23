@@ -2,7 +2,7 @@
 // @name        GUI
 // @namespace   SMCTools
 // @version     2.22
-// @description Displays information about products in SMC product repository
+// @description Change some SMC GUI elements
 // @grant       none
 // @include     http://smc*
 // @require     http://code.jquery.com/jquery-3.2.1.min.js
