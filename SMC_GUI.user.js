@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        GUI
-// @namespace   SMCTools
+// @namespace   https://github.com/br-smc/userscripts
 // @version     2.22
 // @description Change some SMC GUI elements
 // @grant       none
