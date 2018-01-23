@@ -7,7 +7,9 @@
 // @include     http://smc*
 // @require     http://code.jquery.com/jquery-3.2.1.min.js
 // @run-at      document-idle
-// @downloadUrl https://github.com/br-smc/userscripts/raw/master/SMC_ProductInfo.user.js
+// @downloadURL https://github.com/br-smc/userscripts/raw/master/SMC_ProductInfo.user.js
+// @updateURL https://github.com/br-smc/userscripts/raw/master/SMC_ProductInfo.user.js
+// @installURL https://github.com/br-smc/userscripts/raw/master/SMC_ProductInfo.user.js
 // ==/UserScript==
 
 var Product = top.Product || {};
