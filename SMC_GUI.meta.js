@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   https://github.com/br-smc/userscripts
-// @version     2.25
+// @version     2.30
 // @description Change some SMC GUI elements
+// @author      Guido Erlinger
 // @grant       none
 // @include     http://smc*
 // @require     https://code.jquery.com/jquery-3.3.1.min.js
