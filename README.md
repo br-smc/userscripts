@@ -6,8 +6,21 @@ There are two userscripts:
 
 <a name="SMC_GUI"></a>
 ## SMC_GUI.user.js
+This script only changes some GUI stuff of SMC:
+- Gray (instead blue) module icon inside tree structure of folders and books.
+- Style of paginator symbols.
+
+Get the userscript:
 - [Download and Install](https://github.com/br-smc/userscripts/raw/master/SMC_GUI.user.js)
+
 
 <a name="SMC_ProductInfo"></a>
 ## SMC_ProductInfo.user.js
+This script displays some product information in the header of a product.
+- WEB export flag online/offline ==> green/red background of title
+- Further informations:
+    - if product is customer product
+    - if hidden/visible in web hierarchy
+
+Get the userscript:
 - [Download and Install](https://github.com/br-smc/userscripts/raw/master/SMC_ProductInfo.user.js)
