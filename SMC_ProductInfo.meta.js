@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ProductInfo
 // @namespace   https://github.com/br-smc/userscripts
-// @version     2.61
+// @version     2.62
 // @description Displays information about products in SMC product repository
 // @author      Guido Erlinger
 // @grant       none
