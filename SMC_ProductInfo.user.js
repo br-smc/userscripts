@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ProductInfo
 // @namespace   https://github.com/br-smc/userscripts
-// @version     2.60
+// @version     2.61
 // @description Displays information about products in SMC product repository
 // @author      Guido Erlinger
 // @grant       none
@@ -16,7 +16,7 @@
 var Product = top.Product || {};
 
 Product.Debug = (function () {
-    var DEBUG = true;
+    var DEBUG = false;
     return {
         log: function (logOutput) {
             if (DEBUG) {
