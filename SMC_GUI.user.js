@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   https://github.com/br-smc/userscripts
-// @version     3.00
+// @version     3.10
 // @description Change some SMC GUI elements
 // @author      Guido Erlinger
 // @grant       none
@@ -19,13 +19,24 @@ var GUI = top.GUI || {};
 GUI.MAIN = (function(){
   return {
     Format: function() {
-      $('head').append(`
-        <style type="text/css">
-          .smc-doc, .title_ct_icon.doc, .smc-media-image-container.doc {
-            background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDggNDgiPjxwb2x5Z29uIGZpbGw9IiNkZGQiIHBvaW50cz0iNDAsNDUgOCw0NSA4LDMgMzAsMyA0MCwxMyIvPjxwb2x5Z29uIGZpbGw9IiNiYmIiIHBvaW50cz0iMzguNSwxNCAyOSwxNCAyOSw0LjUiLz48ZyBmaWxsPSIjODg4Ij48cmVjdCB4PSIxNiIgeT0iMjEiIHdpZHRoPSIxNyIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iMTYiIHk9IjI1IiB3aWR0aD0iMTMiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjE2IiB5PSIyOSIgd2lkdGg9IjE3IiBoZWlnaHQ9IjIiLz48cmVjdCB4PSIxNiIgeT0iMzMiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyIi8+PC9nPjwvc3ZnPg==") !important;
-          }
-        </style>`
-      );
+			if (location.host == "smc-qs.br-automation.co.at") {
+				$('head').append(`
+					<style type="text/css">
+						.smc-ct > .x-panel-header > .x-panel-header-text {
+							color: #800000 !important;
+						}
+						.smc-ct > .x-panel-header > .x-panel-header-text:before {
+							content: "" !important;
+						}
+                        .smc-top-tabs > .x-tab-panel-header {
+							background-color: #eeee33 !important;
+                        }
+                        .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip-top {
+							background-color: #eeee33 !important;
+                        }
+					</style>`
+				);
+			}
     }
   };
 })();
