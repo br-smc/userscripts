@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ProductInfo
 // @namespace   https://github.com/br-smc/userscripts
-// @version     3.00
+// @version     3.01
 // @description Displays information about products in SMC product repository
 // @author      Guido Erlinger
 // @grant       none
@@ -39,7 +39,7 @@ Product.CHECK = (function () {
                 if (
                     url.indexOf("/plugin-transformer") > 0 &&
                     url.indexOf("&objType=product&") > 0 &&
-                    url.indexOf("&trafo=HTML&") > 0
+                    url.indexOf("&trafo=HTML") > 0
                 ) {
                     return true;
                 }
