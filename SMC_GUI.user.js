@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   https://github.com/br-smc/userscripts
-// @version     3.10
+// @version     3.11
 // @description Change some SMC GUI elements
 // @author      Guido Erlinger
 // @grant       none
@@ -19,24 +19,46 @@ var GUI = top.GUI || {};
 GUI.MAIN = (function(){
   return {
     Format: function() {
-			if (location.host == "smc-qs.br-automation.co.at") {
-				$('head').append(`
-					<style type="text/css">
-						.smc-ct > .x-panel-header > .x-panel-header-text {
-							color: #800000 !important;
-						}
-						.smc-ct > .x-panel-header > .x-panel-header-text:before {
-							content: "" !important;
-						}
-                        .smc-top-tabs > .x-tab-panel-header {
-							background-color: #eeee33 !important;
-                        }
-                        .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip-top {
-							background-color: #eeee33 !important;
-                        }
-					</style>`
-				);
-			}
+      var bgCol0 = "#fafafa";
+      var bgCol1 = "#fc4";
+      var bgCol2 = "#ccc";
+      var borderCol1 = "#f80";
+      if (location.host == "smc-qs.br-automation.co.at") {
+        $('head').append(`
+          <style type="text/css">
+            .smc-ct > .x-panel-header > .x-panel-header-text {
+              color: #800000 !important;
+            }
+            .smc-ct > .x-panel-header > .x-panel-header-text:before {
+              content: "" !important;
+            }
+            .smc-top-tabs > .x-tab-panel-header {
+              background-color: ${bgCol1} !important;
+            }
+            .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip .x-tab-strip-active .x-tab-right,
+            .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip .x-tab-strip-active:hover .x-tab-right {
+              border-top-color: ${borderCol1};
+            }
+
+            .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip li {
+              background-color: ${bgCol2} !important;
+            }
+            .smc-main-sidebar > .x-panel-header {
+              background-color: ${bgCol0} !important;
+            }
+
+            .smc-top-tabs > .x-tab-panel-header ul.x-tab-strip-top {
+              background-color: ${bgCol1} !important;
+            }
+            .x-panel-header, .smc-book-tree .x-panel-header {
+              background-color: ${bgCol1} !important;
+            }
+            .x-panel-collapsed .x-panel-header, .x-panel-collapsed .smc-book-tree .x-panel-header {
+              background-color: ${bgCol2} !important;
+            }
+          </style>`
+        );
+      }
     }
   };
 })();

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        GUI
 // @namespace   https://github.com/br-smc/userscripts
-// @version     3.10
+// @version     3.11
 // @description Change some SMC GUI elements
 // @author      Guido Erlinger
 // @grant       none
