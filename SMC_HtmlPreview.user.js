@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        HTML-Preview
 // @namespace   https://github.com/br-smc/userscripts
-// @version     0.1
+// @version     0.2
 // @description Displays information about characterizations
 // @author      Guido Erlinger
 // @grant       none
@@ -163,7 +163,10 @@ HtmlPreview.Content = (function () {
             // PRELIMINARY content
             $(HtmlPreview.FILTER.PRELIMINARY, context).css({
                 "background-color": HtmlPreview.COLOR.PRELIMINARY.BG,
-                "border": "1px solid " + HtmlPreview.COLOR.PRELIMINARY.BORDER
+                "border": "2px solid " + HtmlPreview.COLOR.PRELIMINARY.BORDER,
+                "margin": 4px,
+                "padding": 4px,
+                "border-radius": 4px
             });
         }
     };

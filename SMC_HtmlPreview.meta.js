@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        HTML-Preview
 // @namespace   https://github.com/br-smc/userscripts
-// @version     0.1
+// @version     0.2
 // @description Displays information about characterizations
 // @author      Guido Erlinger
 // @grant       none
